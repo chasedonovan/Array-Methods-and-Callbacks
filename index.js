@@ -9,7 +9,6 @@ Practice accessing data by console.log-ing the following pieces of data note, yo
 
 let result = fifaData.filter((x)=> x.Year == 2014);
 
-// console.log("Result 2014 "+ result.length, '\n', result)
 let homeTeam = result.map((x,i)=> {return(x.Year + " Home Team " + (i+1) + " is " + x['Home Team Name'] +'\n')});
     console.log("List of Home Team" +'\n'+ homeTeam)
 
@@ -55,6 +54,8 @@ hint - you should be looking at the stage key inside of the objects
 function getFinals(arr) {
     return arr.filter(i => i.Stage === "Final");
 }
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use the higher-order function called getYears to do the following: 
